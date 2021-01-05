@@ -33,54 +33,58 @@
 <body>
   <div class="container">
     <div class="sidebar">
-      <figure class="logo">
-        <img src="src/images/videos_player_logo.png" alt="Videos Player Logo">
-      </figure>
+      <div class="sidebar-wrapper">
+        <div class="sidebar-header-responsive">
+          <figure class="logo">
+            <img src="src/images/videos_player_logo.png" alt="Videos Player Logo">
+          </figure>
+        </div>
 
-      <div class="user-playlist">
-        <h3>My Playlist</h3>
+        <div class="sidebard-content-wrapper">
+          <figure class="menu-responsive-hamburger">
+            <img src="src/images/icons/menu.svg" alt="Menu Icon">
+          </figure>
 
-        <ol class="playlist">
-          <li>5 Reasons To Choose A Notebook Over a Computer Desktop</li>
-          <li>Get Around Easily With A New York Limousine Service</li>
-          <li>How To Cook A Tender Juicy Steak</li>
-          <li>How To Remove Kidney Stones</li>
-          <li>The Science Of Superstitions</li>
-          <li>5 Reasons To Choose A Notebook Over a Computer Desktop</li>
-          <li>Get Around Easily With A New York Limousine Service</li>
-          <li>How To Cook A Tender Juicy Steak</li>
-          <li>How To Remove Kidney Stones</li>
-          <li>The Science Of Superstitions</li>
-        </ol>
-      </div>
+          <div class="sidebar-content">
+            <div class="user-playlist">
+              <h3>My Playlist</h3>
 
-      <div class="friends-playlist">
-        <h3>Friends Playlist</h3>
+              <ol class="playlist">
+                <li>5 Reasons To Choose A Notebook Over a Computer Desktop</li>
+                <li>Get Around Easily With A New York Limousine Service</li>
+                <li>How To Cook A Tender Juicy Steak</li>
+                <li>How To Remove Kidney Stones</li>
+                <li>The Science Of Superstitions</li>
+                <li>5 Reasons To Choose A Notebook Over a Computer Desktop</li>
+                <li>Get Around Easily With A New York Limousine Service</li>
+                <li>How To Cook A Tender Juicy Steak</li>
+                <li>How To Remove Kidney Stones</li>
+                <li>The Science Of Superstitions</li>
+              </ol>
+            </div>
 
-        <div class="playlist">
-          <div class="playlist-item">
-            <figure>
-              <img class="user-avatar" src="src/images/users/user-profile-01.png" alt="User Avatar">
-              <figcaption>Gordon Carroll</figcaption>
-            </figure>
-          </div>
-          <div class="playlist-item">
-            <figure>
-              <img class="user-avatar" src="src/images/users/user-profile-02.png" alt="User Avatar">
-              <figcaption>Adeline Wilkins</figcaption>
-            </figure>
-          </div>
-          <div class="playlist-item">
-            <figure>
-              <img class="user-avatar" src="src/images/users/user-profile-03.png" alt="User Avatar">
-              <figcaption>John Wheeler</figcaption>
-            </figure>
-          </div>
-          <div class="playlist-item">
-            <figure>
-              <img class="user-avatar" src="src/images/users/user-profile-04.png" alt="User Avatar">
-              <figcaption>Katherine Nelson</figcaption>
-            </figure>
+            <div class="friends-playlist">
+              <h3>Friends Playlist</h3>
+
+              <div class="playlist">
+                <figure class="playlist-item">
+                  <img class="user-avatar" src="src/images/users/user-profile-01.png" alt="User Avatar">
+                  <figcaption>Gordon Carroll</figcaption>
+                </figure>
+                <figure class="playlist-item">
+                  <img class="user-avatar" src="src/images/users/user-profile-02.png" alt="User Avatar">
+                  <figcaption>Adeline Wilkins</figcaption>
+                </figure>
+                <figure class="playlist-item">
+                  <img class="user-avatar" src="src/images/users/user-profile-03.png" alt="User Avatar">
+                  <figcaption>John Wheeler</figcaption>
+                </figure>
+                <figure class="playlist-item">
+                  <img class="user-avatar" src="src/images/users/user-profile-04.png" alt="User Avatar">
+                  <figcaption>Katherine Nelson</figcaption>
+                </figure>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -88,94 +92,103 @@
 
     <div class="content">
       <div class="video-player">
-
+        <figure class="video-wrapper">
+          <img class="arrow-back" src="src/images/icons/arrow_back.svg" alt="Arrow back">
+          <img src="src/images/icons/play_circle_outline.svg" alt="Video player icon">
+        </figure>
       </div>
 
       <div class="video-info">
-        <h2>New Order - Bizarre Love Triangle</h2>
+        <h3>New Order - Bizarre Love Triangle</h3>
         <p class="views">
-
+          124,886 views
         </p>
 
         <div class="actions">
-          <button class="btn-primary">
-            Add to my playlist
-          </button>
-          <button class="btn-reverse">
-            Share
-          </button>
-          <button class="btn-reverse">
-            Save
-          </button>
+          <div class="buttons">
+            <button class="btn-primary">
+              Add to my playlist
+            </button>
+            <button class="btn-reverse share-icon">
+              <img src="src/images/icons/reply.svg" alt="Share Icon">
+              Share
+            </button>
+            <button class="btn-reverse save-icon">
+              <img src="src/images/icons/cloud_download.svg" alt="Save Icon">
+              Save
+            </button>
+          </div>
 
           <div class="labels">
-            <label>Electronic</label>
-            <label>Rock</label>
-            <label>80</label>
-            <label>Relax</label>
+            <label class="label-1">Electronic</label>
+            <label class="label-2">Rock</label>
+            <label class="label-3">80</label>
+            <label class="label-4">Relax</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-extra-info-container">
+        <div class="video-comments">
+          <p>Comments</p>
+
+          <div class="input-wrapper">
+            <figure>
+              <img class="user-avatar" src="src/images/users/user-profile-00.png" alt="Input Avatar">
+            </figure>
+            <input type="text" placeholder="Add a comment">
+          </div>
+
+          <div class="users-comments">
+            <figure class="comment">
+              <img class="user-avatar" src="src/images/users/user-profile-05.png" alt="Input Avatar">
+              <div class="figure-text">
+                <figcaption class="comment-user-name">Gordon Carroll</figcaption>
+                <figcaption>Barbecue Sause For a Perfect Barbeque</figcaption>
+              </div>
+            </figure>
+            <figure class="comment">
+              <img class="user-avatar" src="src/images/users/user-profile-06.png" alt="Input Avatar">
+              <div class="figure-text">
+                <figcaption class="comment-user-name">Gordon Carroll</figcaption>
+                <figcaption>Why Las Vegas Hotel Rooms For You</figcaption>
+              </div>
+            </figure>
+            <figure class="comment">
+              <img class="user-avatar" src="src/images/users/user-profile-07.png" alt="Input Avatar">
+              <div class="figure-text">
+                <figcaption class="comment-user-name">Gordon Carroll</figcaption>
+                <figcaption>Barbecue Sause For a Perfect Barbeque</figcaption>
+              </div>
+            </figure>
+            <figure class="comment">
+              <img class="user-avatar" src="src/images/users/user-profile-08.png" alt="Input Avatar">
+              <div class="figure-text">
+                <figcaption class="comment-user-name">Gordon Carroll</figcaption>
+                <figcaption>Barbecue Sause For a Perfect Barbeque</figcaption>
+              </div>
+            </figure>
           </div>
         </div>
 
-      </div>
-
-      <div class="video-comments">
-        <p>Comments</ p>
-
-        <div class="input-wrapper">
-          <figure>
-            <img src="src/images/users/user-profile-00.png" alt="Input Avatar">
+        <div class="video-suggestions">
+          <figure class="suggestion">
+            <img src="src/images/suggestions/suggestion-01.jpg" alt="Video suggestion">
+            <figcaption>Quick And Easy Lunches For The Cooking Challenged</figcaption>
           </figure>
-          <input type="text">
-        </div>
-
-        <div class="users-comments">
-          <div class="comment">
-            <figure>
-              <img src="src/images/users/user-profile-05.png" alt="Input Avatar">
-              <figcaption>Gordon Carroll</figcaption>
-              <figcaption>Barbecue Sause For a Perfect Barbeque</figcaption>
-            </figure>
-          </div>
-          <div class="comment">
-            <figure>
-              <img src="src/images/users/user-profile-06.png" alt="Input Avatar">
-              <figcaption>Gordon Carroll</figcaption>
-              <figcaption>Barbecue Sause For a Perfect Barbeque</figcaption>
-            </figure>
-          </div>
-          <div class="comment">
-            <figure>
-              <img src="src/images/users/user-profile-07.png" alt="Input Avatar">
-              <figcaption>Gordon Carroll</figcaption>
-              <figcaption>Barbecue Sause For a Perfect Barbeque</figcaption>
-            </figure>
-          </div>
-          <div class="comment">
-            <figure>
-              <img src="src/images/users/user-profile-08.png" alt="Input Avatar">
-              <figcaption>Gordon Carroll</figcaption>
-              <figcaption>Barbecue Sause For a Perfect Barbeque</figcaption>
-            </figure>
-          </div>
+          <figure class="suggestion">
+            <img src="src/images/suggestions/suggestion-02.jpg" alt="Video suggestion">
+            <figcaption>Quick And Easy Lunches For The Cooking Challenged</figcaption>
+          </figure>
         </div>
       </div>
 
-      <div class="video-suggestions">
-        <figure class="suggestion">
-          <img src="src/images/suggestions/suggestion-01.jpg" alt="Video suggestion">
-          <figcaption>Quick And Easy Lunches For The Cooking Challenged</figcaption>
-        </figure>
-        <figure class="suggestion">
-          <img src="src/images/suggestions/suggestion-02.jpg" alt="Video suggestion">
-          <figcaption>Quick And Easy Lunches For The Cooking Challenged</figcaption>
-        </figure>
-      </div>
 
 
-      <!-- <div class="footer">
+      <div class="footer">
         <p>Made with with ❤️ by <a href="https://www.xergioalex.com/" target="_blank">XergioAleX</a> ©2021</p>
         <p class="github-disclaimer">Fork me on <a href="https://www.xergioalex.com/" target="_blank">GitHub</a></p>
-      </div> -->
+      </div>
     </div>
   </div>
 </body>

@@ -1,11 +1,259 @@
 .content {
+  position: relative;
+  width: 100%;
+  .video-player {
+    .video-wrapper {
+      cursor: pointer;
+      position: relative;
+      width: 100%;
+      height: 500px;
+      background-image: url("../images/video-preview.jpg");
+      background-size: cover;
+      background-position: center center;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+
+      @media (max-width: map_get($screen, _xxl-max)) {
+        height: 450px;
+      }
+
+      @media (max-width: map_get($screen, _lg-max)) {
+        height: 400px;
+      }
+
+      @media (max-width: map_get($screen, _md-max)) {
+        height: 360px;
+      }
+
+      @media (max-width: map_get($screen, _xs-max)) {
+        height: 280px;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      .arrow-back {
+        position: absolute;
+        top: 40px;
+        left: 30px;
+        width: 40px;
+      }
+      img {
+        width: 120px;
+        z-index: 1;
+      }
+    }
+  }
+
+  .video-info {
+    -webkit-box-shadow: -1px 8px 11px -1px rgba(0,0,0,0.2);
+    box-shadow: -1px 0px 11px -1px rgba(0,0,0,0.4);
+    padding: 26px 18px;
+
+    h3 {
+      margin-top: 0;
+      margin-bottom: 6px;
+    }
+    .views {
+      color: $c_gray;
+      margin-top: 0;
+    }
+    .actions {
+      display: flex;
+      align-items: center;
+
+      @media (max-width: map_get($screen, _lg-max)) {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .buttons {
+        display: flex;
+        align-items: center;
+        margin-right: 100px;
+
+        @media (max-width: map_get($screen, _lg-max)) {
+          margin-right: 0;
+          margin-bottom: 16px;
+        }
+
+        button {
+          border: 0;
+          cursor: pointer;
+          margin-right: 24px;
+          &.btn-primary {
+            height: 35px;
+            color: $c_white;
+            background-color: $c_secondary;
+            padding: 7px 10px;
+            background: $c_secondary;
+            background: linear-gradient(90deg, $c_secondary 35%, lighten($c_secondary, 25%) 100%);
+            border-radius: 10px;
+          }
+          &.btn-reverse {
+            display: flex;
+            flex-direction: column;
+            background-color: transparent;
+            align-items: center;
+            font-size: 12px;
+            img {
+              width: 20px;
+            }
+
+            &.share-icon {
+              img {
+                -webkit-transform: scaleX(-1);
+                transform: scaleX(-1);
+              }
+            }
+
+            &.save-icon {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+
+      .labels {
+        label {
+          border-radius: 10px;
+          background-color: red;
+          color: $c_white;
+          font-size: 12px;
+          padding: 4px 10px;
+          width: 55px;
+          display: inline-block;
+          text-align: center;
+          cursor: pointer;
+          &.label-1 {
+            background-color: $c_label_1;
+          }
+          &.label-2 {
+            background-color: $c_label_2;
+          }
+          &.label-3 {
+            background-color: $c_label_3;
+          }
+          &.label-4 {
+            background-color: $c_label_4;
+          }
+        }
+      }
+    }
+  }
+
+  .video-extra-info-container {
+    display: grid;
+    grid-template-columns: 1fr 250px 140px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    -webkit-box-shadow: -1px 8px 11px -1px rgba(0,0,0,0.2);
+    box-shadow: -1px 0px 11px -1px rgba(0,0,0,0.4);
+
+    @media (max-width: map_get($screen, _lg-max)) {
+      grid-template-columns: 1fr 250px 20px;
+    }
+
+    @media (max-width: map_get($screen, _xs-middle-max)) {
+      grid-template-columns: 1fr;
+    }
+
+    .video-comments {
+      padding: 30px 100px 30px 20px;
+
+      @media (max-width: map_get($screen, _lg-max)) {
+        padding: 30px 30px 30px 20px;
+      }
+
+      .input-wrapper {
+        display: flex;
+        border-radius: 6px;
+        background-color: rgba($c_light_gray, 0.5);
+        padding: 6px 10px;
+        margin-bottom: 16px;
+        figure {
+          width: 28px;
+          height: 28px;
+          margin-right: 10px;
+          img {
+            width: 28px;
+            height: 28px;
+          }
+        }
+        input {
+          width: 100%;
+          background-color: transparent;
+          border: 0;
+        }
+      }
+  
+      .users-comments {
+        img {
+          margin-right: 10px;
+        }
+        .comment {
+          display: flex;
+          align-items: center;
+          margin-bottom: 16px;
+          cursor: pointer;
+          .comment-user-name {
+            font-weight: 500;
+          }
+        }
+      }
+    }
+    
+    .video-suggestions {
+      padding-top: 30px;
+
+      .suggestion {
+        margin-bottom: 24px;
+        cursor: pointer;
+        img {
+          width: 100%;
+          margin-bottom: 4px;
+          -webkit-box-shadow: -1px 8px 11px -1px rgba(0,0,0,0.2);
+          box-shadow: -1px 2px 11px -1px rgba(0,0,0,0.4);
+        }
+        figcaption {
+          font-size: 12px;
+        }
+      }
+
+      @media (max-width: map_get($screen, _xs-middle-max)) {
+        padding: 0 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+      }
+
+      @media (max-width: map_get($screen, _xxxs-max)) {
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+        .suggestion {
+          figcaption {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+  }
 
   .footer {
+    margin-bottom: 30px;
     p {
       margin: 0;
       text-align: center;
       a {
-        color: $c_primary;
+        color: $c_secondary;
       }
       &:first-child {
         margin-bottom: 8px;

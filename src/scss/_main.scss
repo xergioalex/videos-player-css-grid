@@ -13,8 +13,22 @@ figure {
   grid-template-columns: 300px 1fr;
   grid-template-rows: 1fr;
   overflow: auto;
-  @media (max-width: map_get($screen, _xs-max)) {
-    grid-template-areas: "header header"
-                         "content content";
+  position: relative;
+
+  @media (max-width: map_get($screen, _md-max)) {
+    grid-template-areas: "sidebar"
+                         "content";
+    grid-template-columns: 1fr;
+    grid-template-rows: 64px 1fr;
   }
+}
+
+p {
+  margin-top: 0;
+}
+
+.user-avatar {
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
 }
