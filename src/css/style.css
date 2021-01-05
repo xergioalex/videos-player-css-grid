@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+figure {
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-areas: "sidebar content";
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: 1fr;
+  overflow: auto;
+}
+@media (max-width: 575px) {
+  .container {
+    grid-template-areas: "header header" "content content";
+  }
+}
+
+.sidebar {
+  color: #ffffff;
+  background-color: #151b31;
+  height: 100vh;
+  padding: 40px 20px;
+}
+.sidebar .logo img {
+  width: 220px;
+}
+.content .footer p {
+  margin: 0;
+  text-align: center;
+}
+.content .footer p a {
+  color: #151b31;
+}
+.content .footer p:first-child {
+  margin-bottom: 8px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="XergioAleX (xergioalex.com)">
+  <title>Movies Page Using Css Grid</title>
+  <meta name="keywords" content="Movies page, css grid layout, html">
+  <meta name="description" content="Movies page created using css grid layout.">
+
+  <!-- Favicon -->
+	<link rel="shortcut icon" type="favicon/png" href="https://videos-player-css-grid.xergioalex.com/src/images/favicon.png" />
+  <meta name="apple-mobile-web-app-title" content="videos-player-css-grid">
+  <meta name="application-name" content="videos-player-css-grid">
+  <meta name="theme-color" content="#fc535a">
+  <!--/ Favicons -->
+
+
+  <!-- Facebook Open Graph Meta Tags -->
+  <meta name="titleFb" property="og:title" content="Movies Page Using Css Grid" />
+  <meta name="typeFb" property="og:type" content="website" />
+  <meta name="urlFb" property="og:url" content="https://videos-player-css-grid.xergioalex.com/" />
+  <meta name="urlImageFb" property="og:image" content="https://videos-player-css-grid.xergioalex.com/src/images/SEO_image.png" />
+  <meta name="descriptionFb" property="og:description" content="Movies page created using css grid layout." />
+
+  <!-- Fonts && CSS -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <figure class="logo">
+        <img src="src/images/videos_player_logo.png" alt="Videos Player Logo">
+      </figure>
+
+      <div class="user-playlist">
+        <h3>My Playlist</h3>
+
+        <ol class="playlist">
+          <li>5 Reasons To Choose A Notebook Over a Computer Desktop</li>
+          <li>Get Around Easily With A New York Limousine Service</li>
+          <li>How To Cook A Tender Juicy Steak</li>
+          <li>How To Remove Kidney Stones</li>
+          <li>The Science Of Superstitions</li>
+          <li>5 Reasons To Choose A Notebook Over a Computer Desktop</li>
+          <li>Get Around Easily With A New York Limousine Service</li>
+          <li>How To Cook A Tender Juicy Steak</li>
+          <li>How To Remove Kidney Stones</li>
+          <li>The Science Of Superstitions</li>
+        </ol>
+      </div>
+
+      <div class="friends-playlist">
+        <h3>Friends Playlist</h3>
+
+        <div class="playlist">
+          <div class="playlist-item">
+            <figure>
+              <img class="user-avatar" src="src/images/users/user-profile-01.png" alt="User Avatar">
+              <figcaption>Gordon Carroll</figcaption>
+            </figure>
+          </div>
+          <div class="playlist-item">
+            <figure>
+              <img class="user-avatar" src="src/images/users/user-profile-02.png" alt="User Avatar">
+              <figcaption>Adeline Wilkins</figcaption>
+            </figure>
+          </div>
+          <div class="playlist-item">
+            <figure>
+              <img class="user-avatar" src="src/images/users/user-profile-03.png" alt="User Avatar">
+              <figcaption>John Wheeler</figcaption>
+            </figure>
+          </div>
+          <div class="playlist-item">
+            <figure>
+              <img class="user-avatar" src="src/images/users/user-profile-04.png" alt="User Avatar">
+              <figcaption>Katherine Nelson</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="video-player">
+
+      </div>
+
+      <div class="video-info">
+        <h2>New Order - Bizarre Love Triangle</h2>
+        <p class="views">
+
+        </p>
+
+        <div class="actions">
+          <button class="btn-primary">
+            Add to my playlist
+          </button>
+          <button class="btn-reverse">
+            Share
+          </button>
+          <button class="btn-reverse">
+            Save
+          </button>
+
+          <div class="labels">
+            <label>Electronic</label>
+            <label>Rock</label>
+            <label>80</label>
+            <label>Relax</label>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="video-comments">
+        <p>Comments</ p>
+
+        <div class="input-wrapper">
+          <figure>
+            <img src="src/images/users/user-profile-00.png" alt="Input Avatar">
+          </figure>
+          <input type="text">
+        </div>
+
+        <div class="users-comments">
+          <div class="comment">
+            <figure>
+              <img src="src/images/users/user-profile-05.png" alt="Input Avatar">
+              <figcaption>Gordon Carroll</figcaption>
+              <figcaption>Barbecue Sause For a Perfect Barbeque</figcaption>
+            </figure>
+          </div>
+          <div class="comment">
+            <figure>
+              <img src="src/images/users/user-profile-06.png" alt="Input Avatar">
+              <figcaption>Gordon Carroll</figcaption>
+              <figcaption>Barbecue Sause For a Perfect Barbeque</figcaption>
+            </figure>
+          </div>
+          <div class="comment">
+            <figure>
+              <img src="src/images/users/user-profile-07.png" alt="Input Avatar">
+              <figcaption>Gordon Carroll</figcaption>
+              <figcaption>Barbecue Sause For a Perfect Barbeque</figcaption>
+            </figure>
+          </div>
+          <div class="comment">
+            <figure>
+              <img src="src/images/users/user-profile-08.png" alt="Input Avatar">
+              <figcaption>Gordon Carroll</figcaption>
+              <figcaption>Barbecue Sause For a Perfect Barbeque</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-suggestions">
+        <figure class="suggestion">
+          <img src="src/images/suggestions/suggestion-01.jpg" alt="Video suggestion">
+          <figcaption>Quick And Easy Lunches For The Cooking Challenged</figcaption>
+        </figure>
+        <figure class="suggestion">
+          <img src="src/images/suggestions/suggestion-02.jpg" alt="Video suggestion">
+          <figcaption>Quick And Easy Lunches For The Cooking Challenged</figcaption>
+        </figure>
+      </div>
+
+
+      <!-- <div class="footer">
+        <p>Made with with ❤️ by <a href="https://www.xergioalex.com/" target="_blank">XergioAleX</a> ©2021</p>
+        <p class="github-disclaimer">Fork me on <a href="https://www.xergioalex.com/" target="_blank">GitHub</a></p>
+      </div> -->
+    </div>
+  </div>
+</body>
+</html>

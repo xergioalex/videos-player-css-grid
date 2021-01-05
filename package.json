@@ -1,0 +1,24 @@
+{
+  "name": "videos-player-page-css-grid",
+  "version": "1.0.0",
+  "description": "Frontend exercise creating a videos player page using css grid layout.",
+  "main": "index.js",
+  "scripts": {
+    "server": "http-server -c-1",
+    "sass:watcher": "sass --watch src/scss/style.scss src/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xergioalex/movies-page-css-grid.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xergioalex/movies-page-css-grid/issues"
+  },
+  "homepage": "https://github.com/xergioalex/movies-page-css-grid#readme",
+  "devDependencies": {
+    "http-server": "^0.12.3",
+    "sass": "^1.32.0"
+  }
+}

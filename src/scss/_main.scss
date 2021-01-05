@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+figure {
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-areas: "sidebar content";
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: 1fr;
+  overflow: auto;
+  @media (max-width: map_get($screen, _xs-max)) {
+    grid-template-areas: "header header"
+                         "content content";
+  }
+}

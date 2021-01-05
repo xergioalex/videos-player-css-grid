@@ -1,0 +1,15 @@
+.content {
+
+  .footer {
+    p {
+      margin: 0;
+      text-align: center;
+      a {
+        color: $c_primary;
+      }
+      &:first-child {
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
