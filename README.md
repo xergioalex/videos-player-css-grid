@@ -2,7 +2,7 @@
 
 Frontend exercise creating a videos player page using css grid layout.
 
-- Solution: http://videos-player-css-grid.xergioalex.com/
+- Solution: https://videos-player-css-grid.xergioalex.com/
 
 ## Challenge
 
@@ -11,7 +11,7 @@ Create a movie page based on the following mockup:
 
 ## Solution
 
-This is my solution inspired on the below mockup: http://videos-player-css-grid.xergioalex.com/
+This is my solution inspired on the below mockup: https://videos-player-css-grid.xergioalex.com/
 <img alt="Movies Css Grid Gif" src="media/videos-player-css-grid.gif">
 
 Css grid layout areas:
