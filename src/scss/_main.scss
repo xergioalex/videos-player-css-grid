@@ -1,6 +1,11 @@
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
+
+  @media (prefers-color-scheme: dark) {
+    background: $c_dark_scheme;
+    color: $c_white;
+  }
 }
 
 figure {

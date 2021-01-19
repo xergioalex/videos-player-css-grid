@@ -3,6 +3,12 @@ body {
   margin: 0;
   font-family: "Roboto", sans-serif;
 }
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #313131;
+    color: #ffffff;
+  }
+}
 
 figure {
   margin: 0;
@@ -84,6 +90,11 @@ p {
   margin-bottom: 30px;
   padding: 0 20px;
   transition: transform 0.3s;
+}
+@media (prefers-reduced-motion) {
+  .sidebar .sidebar-wrapper .sidebard-content-wrapper .sidebar-content {
+    transition: none;
+  }
 }
 .sidebar .sidebar-wrapper .sidebard-content-wrapper .sidebar-content .user-playlist {
   margin-bottom: 30px;
@@ -249,6 +260,11 @@ p {
   cursor: pointer;
   margin-right: 24px;
 }
+@media (prefers-color-scheme: dark) {
+  .content .video-info .actions .buttons button {
+    color: #ffffff;
+  }
+}
 .content .video-info .actions .buttons button.btn-primary {
   height: 35px;
   color: #ffffff;
@@ -274,6 +290,20 @@ p {
 }
 .content .video-info .actions .buttons button.btn-reverse.save-icon {
   margin-right: 0;
+}
+.content .video-info .actions .buttons button .black {
+  display: block;
+}
+.content .video-info .actions .buttons button .white {
+  display: none;
+}
+@media (prefers-color-scheme: dark) {
+  .content .video-info .actions .buttons button .black {
+    display: none;
+  }
+  .content .video-info .actions .buttons button .white {
+    display: block;
+  }
 }
 .content .video-info .actions .labels label {
   border-radius: 10px;
@@ -344,6 +374,14 @@ p {
   width: 100%;
   background-color: transparent;
   border: 0;
+}
+@media (prefers-color-scheme: dark) {
+  .content .video-extra-info-container .video-comments .input-wrapper input {
+    color: #ffffff;
+  }
+  .content .video-extra-info-container .video-comments .input-wrapper input::placeholder {
+    color: #ffffff;
+  }
 }
 .content .video-extra-info-container .video-comments .users-comments img {
   margin-right: 10px;

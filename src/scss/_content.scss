@@ -88,6 +88,11 @@
           border: 0;
           cursor: pointer;
           margin-right: 24px;
+
+          @media (prefers-color-scheme: dark) {
+            color: $c_white;
+          }
+
           &.btn-primary {
             height: 35px;
             color: $c_white;
@@ -116,6 +121,20 @@
 
             &.save-icon {
               margin-right: 0;
+            }
+          }
+          .black {
+            display: block;
+          }
+          .white {
+            display: none;
+          }
+          @media (prefers-color-scheme: dark) {
+            .black {
+              display: none;
+            }
+            .white {
+              display: block;
             }
           }
         }
@@ -191,9 +210,15 @@
           width: 100%;
           background-color: transparent;
           border: 0;
+          @media (prefers-color-scheme: dark) {
+            color: $c_white;
+            &::placeholder {
+              color: $c_white;
+            }
+          }
         }
       }
-  
+
       .users-comments {
         img {
           margin-right: 10px;
@@ -209,7 +234,7 @@
         }
       }
     }
-    
+
     .video-suggestions {
       padding-top: 30px;
 

@@ -55,6 +55,9 @@
         margin-bottom: 30px;
         padding: 0 20px;
         transition: transform 0.3s;
+        @media (prefers-reduced-motion) {
+          transition: none;
+        }
         .user-playlist {
           margin-bottom: 30px;
           .playlist {
